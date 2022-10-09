@@ -46,7 +46,7 @@ data = {'shop_id': [shop], 'item_id': [item]}
 df = pd.DataFrame(data)  
 if st.button('Predict Sales'):
     my_model=Load_model()
-    my_data=pd.read_pickle(r"C:\Users\INDRANIL MUKHERJEE\applied ai roots\project\FINAL_DATA.pkl")
+    my_data=pd.read_pickle(r"FINAL_DATA.pkl")
     if  ((my_data['shop_id'] == shop) & (my_data['item_id'] == item)).any() :
         df1=pd.merge(df, my_data, how='left', on=['shop_id', 'item_id'])
         X_test=df1.drop(['shop_id','item_id'],axis=1)    
