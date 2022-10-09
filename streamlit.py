@@ -12,7 +12,7 @@ st.markdown(
          f"""
          <style>
          .stApp {{
-             background-image: url("https://cdn.pixabay.com/photo/2019/04/24/11/27/flowers-4151900_960_720.jpg");
+             background-image: url("https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg");
              background-attachment: fixed;
              background-size: cover
          }}
@@ -48,8 +48,8 @@ def Load_model():
     print("Model complied....")
     model_j.summary()    # included to make it visible when model is reloaded
     return model_j
-st.title('Predict Total Sales')
-st.header('Enter the shop id and item id')
+st.title('This model will try to Predict Total Sales')
+st.header('Enter the shop id and item id below: ')
 item = st.number_input('Item Id', min_value=0, max_value=22169, value=1)
 shop = st.number_input('Shop Id', min_value=0, max_value=59, value=1)
 
