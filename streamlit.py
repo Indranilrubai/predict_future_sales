@@ -8,18 +8,18 @@ import tensorflow as tf
 import streamlit as st
 import pandas as pd
 import numpy as np
-
 st.markdown(
          f"""
          <style>
          .stApp {{
-             background-image: url("https://images.pexels.com/photos/5650028/pexels-photo-5650028.jpeg");
+             background-image: url("https://cdn.pixabay.com/photo/2019/04/24/11/27/flowers-4151900_960_720.jpg");
              background-attachment: fixed;
              background-size: cover
          }}
          </style>
          """,
-         unsafe_allow_html=True)
+         unsafe_allow_html=True
+     )
 
 @st.cache(allow_output_mutation=True)
 def Load_model():
