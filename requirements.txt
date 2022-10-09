@@ -244,7 +244,7 @@ statsmodels==0.12.2
 tensorboard==2.8.0
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.1
-tensorflow==2.8.2+zzzcolab20220929150707
+tensorflow==2.8.2
 tensorflow-datasets==4.6.0
 tensorflow-estimator==2.8.0
 tensorflow-gcs-config==2.8.0
