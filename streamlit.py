@@ -55,10 +55,10 @@ if st.button('Predict Sales'):
         y_test_pred.rename(columns = {0:'item_cnt_month'}, inplace = True)
         y_test_pred['item_cnt_month']=y_test_pred['item_cnt_month'].clip(0., 20.)
         val=y_test_pred['item_cnt_month'].values[0]
-        st.success(f'Predicted total amount of product sales for inputted Shop id and Item id is ${val:.2f}')
+        st.success(f'Predicted total amount of product sales for inputted Shop id and Item id is {val:.2f}')
     else:
         def_val=0.18365039469587
-        st.success(f'Predicted total amount of product sales for inputted Shop id and Item id is ${def_val:.2f}')
+        st.success(f'Predicted total amount of product sales for inputted Shop id and Item id is {def_val:.2f}')
     
         
         
