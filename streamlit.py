@@ -23,19 +23,7 @@ st.markdown(
 
 @st.cache(allow_output_mutation=True)
 def Load_model():
-    # load json and create model
-    #json_file = open('LSTM_model.json', 'r')
-    #loaded_model_json = json_file.read()
-    #json_file.close()
-    #loaded_model = model_from_json(loaded_model_json)
-    # load weights into new model
-    #loaded_model.load_weights("LSTM_model_weights.h5")
-    #print("Loaded model from disk")
-    #model._make_predict_function()
-    #model.summary()  # included to make it visible when model is reloaded
-    #session = K.get_session()
-    #return model, session
-    
+       
     #Reading the model from JSON file
     with open('LSTM_model.json', 'r') as json_file:
         json_savedModel= json_file.read()
@@ -45,7 +33,7 @@ def Load_model():
     print("Loaded model from disk")
     #Compiling the model
     model_j.compile(loss = 'mse',optimizer = 'adam', metrics = ['mean_squared_error'])
-    print("Model complied....")
+    print("Model compiled....")
     model_j.summary()    # included to make it visible when model is reloaded
     return model_j
 st.title('This model will try to Predict Total Sales')
